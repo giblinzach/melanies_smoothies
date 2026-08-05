@@ -21,7 +21,7 @@ search_on_dict = dict(zip(fruit_df['FRUIT_NAME'], fruit_df['SEARCH_ON']))
 #st.stop()
 
 # Covery the Snowpark Dataframe to a Pandas Dataframe so we can use the LOC function
-pd_df=my_database.topandas()
+pd_df=my_dataframe.to_pandas()
 st.dataframe(pd_df)
 st.stop()
 
